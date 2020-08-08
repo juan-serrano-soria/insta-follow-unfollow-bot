@@ -16,7 +16,7 @@ They want to keep on doing this cycle of following and unfollowing.
 
 *generate_following_list.py* (Under construction) takes a file containing the accounts of an "engineering group", grabs their followers, removes duplicates and saves these accounts in another file.  
 
-*unfollowing.py* (Not yet created)   
+*unfollowing.py* (Under construction) takes a file containing the accounts followed, and unfollows the ones who didn't follow back.  
 
   
 ### Disclaimer: 
