@@ -12,11 +12,11 @@ Three days later, they want to unfollow these accounts (the ones who where publi
 They want to keep on doing this cycle of following and unfollowing.
 
 ## How to use it  
-*following.py* (Under construction) receives a file containing the accounts to follow, and follows them.  
+*following.py* receives a file as an argument containing the accounts to follow, and follows them.  
 
-*generate_following_list.py* (Under construction) takes a file containing the accounts of an "engineering group", grabs their followers, removes duplicates and saves these accounts in another file.  
+*generate_following_list.py* takes a file containing the accounts of an "engineering group", grabs their followers, removes duplicates and saves these accounts in another file. Both files should be argumentso of the script.  
 
-*unfollowing.py* (Under construction) takes a file containing the accounts followed, and unfollows the ones who didn't follow back.  
+*unfollowing.py* takes a file as an argument containing the accounts followed, and unfollows the ones who didn't follow back.  
 
   
 ### Disclaimer: 

@@ -1,7 +1,16 @@
 from instapy import InstaPy
+import sys
+
+# argv control
+if (len(sys.argv) == 1):
+    print("Please, input the file to read from and the file to write to as arguments")
+    sys.exit(1)
+if(len(sys.argv) > 3):
+    print("Incorrect number of arguments, you must provide only two arguments")
+    sys.exit(1)
 
 # read the accounts from a file into a list
-f = open("sample_accounts.txt", "r")
+f = open(str(sys.argv[1]), "r")
 accounts_list = f.read().splitlines()
 f.close()
 
@@ -27,7 +36,7 @@ followers_no_duplicates = list(set(followers))
 
 
 # write list into a file
-f = open("sample_accounts_followers.txt", "w")
+f = open(str(sys.argv[1]), "w")
 
 for account in followers_no_duplicates:
     f.write(account + '\n')
